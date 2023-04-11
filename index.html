@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="city">New York</h1>
+      <form class="form">
+        <div class="row my-4">
+          <div class="col-6">
+            <input
+              id="search"
+              type="search"
+              placeholder="Type a city"
+              class="form-control"
+              autocomplete="off"
+              value=""
+              autofocuson
+            />
+          </div>
+
+          <div class="col-2">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-warning"
+            />
+            <input
+              type="submit"
+              value="Current"
+              class="form-control btn btn-light mt-2"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="box-hour">
+        <p class="week">Monday</p>
+        <p class="hour">12:00</p>
+      </div>
+      <p class="title">Cloudy</p>
+      <div class="row">
+        <div class="col-6 temp-box">
+          <p class="temp">⛅️ 20</p>
+          <small class="degree">°C </small>
+        </div>
+        <div class="col-6">
+          <h3 class="text-warning">
+            Precipitation: <span class="text-light mx-2">5%</span>
+          </h3>
+          <h3 class="text-warning">
+            Humidity: <span class="text-light mx-2">85%</span>
+          </h3>
+          <h3 class="text-warning">
+            Wind: <span class="text-light mx-2">15km\h</span>
+          </h3>
+          <div class="row mt-5">
+            <div class="col">
+              <button class="btn btn-warning">Temprature</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-warning">Precipitation</button>
+            </div>
+            <div class="col"><button class="btn btn-warning">Wind</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="card__box">
+        <div class="col col-sm-6 cards">
+          <h2>Mon</h2>
+          <h5>🌧</h5>
+          <h3>11°\9°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Tue</h2>
+          <h5>⛅️</h5>
+          <h3>15°\10°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Wed</h2>
+          <h5>⛅️</h5>
+          <h3>10°\13°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Thu</h2>
+          <h5>🌤</h5>
+          <h3>17°\15°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Fri</h2>
+          <h5>⛅️</h5>
+          <h3>12°\10°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Sat</h2>
+          <h5>⛅️</h5>
+          <h3>15°\10°</h3>
+        </div>
+        <div class="col col-sm-6 cards">
+          <h2>Sun</h2>
+          <h5>☀️</h5>
+          <h3>19°\18°</h3>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
